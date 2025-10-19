@@ -1,0 +1,10 @@
+greet:
+  hello: "Hello"
+  welcome: "Welcome, {name}!"
+errors:
+  required: "Required"
+  not_found: "Not found"
+opt:
+  hello: "Hello from Options API"
+
+

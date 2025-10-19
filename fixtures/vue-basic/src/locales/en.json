@@ -1,0 +1,13 @@
+{
+  "greet": {
+    "hello": "Hello"
+  },
+  "unused": {
+    "key": "Not used"
+  },
+  "errors": {
+    "not_found": "Not Found"
+  }
+}
+
+

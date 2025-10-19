@@ -1,0 +1,8 @@
+greet:
+  hello: "Hola"
+errors:
+  required: "Requerido"
+opt:
+  hello: "Hola desde Options API"
+
+

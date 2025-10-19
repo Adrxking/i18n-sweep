@@ -1,0 +1,10 @@
+{
+  "greet": {
+    "hello": "Hola"
+  },
+  "errors": {
+    "not_found": "No encontrado"
+  }
+}
+
+

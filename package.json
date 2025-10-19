@@ -1,0 +1,57 @@
+{
+  "name": "i18n-sweep",
+  "version": "0.1.0",
+  "description": "CLI + API to detect unused or missing i18n keys",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "i18n-sweep": "./dist/cli.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "lint": "eslint .",
+    "format": "prettier -w .",
+    "prepare": "npm run build",
+    "release": "npm publish --access public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.28.4",
+    "@babel/traverse": "^7.28.4",
+    "@vue/compiler-dom": "^3.5.22",
+    "@vue/compiler-sfc": "^3.5.22",
+    "cac": "^6.7.14",
+    "fast-glob": "^3.3.3",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@types/node": "^24.8.1",
+    "eslint": "^9.38.0",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.1",
+    "vitest": "^3.2.4"
+  }
+}
