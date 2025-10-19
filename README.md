@@ -74,6 +74,29 @@ const report = await scan({
 });
 ```
 
+## Advanced usage
+
+- Custom i18n functions (wrappers or aliases):
+
+```bash
+npx i18n-sweep scan --root . \
+  --locales "src/locales/**/*.{json,yaml,yml}" \
+  --i18n-fns translate,i18n.translate,this.i18n.t
+```
+
+- Multiple locale sources (use comma-separated inputs; braces are preserved):
+
+```bash
+npx i18n-sweep scan --root . \
+  --locales "src/locales,packages/**/locales,app/**/i18n/**/*.{json,yaml,yml}" \
+  --report json --out i18n-sweep-report.json
+```
+
+- Target specific files:
+
+```bash
+npx i18n-sweep scan --root . --locales "src/locales/en/common.yaml,src/locales/es/common.yml"
+
 ## Notes & limitations
 
 - Dynamic keys (template literals or concatenation) are used internally as prefix heuristics to avoid false positives. Keys covered by a dynamic prefix are not reported as unused.
