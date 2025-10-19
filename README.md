@@ -15,7 +15,7 @@ Lightweight CLI + API to detect unused and missing i18n keys in your codebase.
 
 ## Install
 
-Use directly with npx (no install):
+Use directly with npx:
 
 ```bash
 npx i18n-sweep scan --root . --locales "src/locales/**/*.{json,yaml,yml}"
