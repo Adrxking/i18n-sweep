@@ -1,6 +1,6 @@
 {
   "name": "i18n-sweep",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "CLI + API to detect unused or missing i18n keys",
   "type": "module",
   "main": "./dist/index.cjs",
