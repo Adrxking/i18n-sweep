@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/Adrxking/i18n-sweep/compare/i18n-sweep-v0.2.1...i18n-sweep-v0.2.2) (2025-10-19)
+
+
+### Miscellaneous Chores
+
+* release 0.2.2 ([2952138](https://github.com/Adrxking/i18n-sweep/commit/29521385b11742645fcd3553690a5ec7d0186d5e))
+
 ## [0.2.1](https://github.com/Adrxking/i18n-sweep/compare/i18n-sweep-v0.2.0...i18n-sweep-v0.2.1) (2025-10-19)
 
 
