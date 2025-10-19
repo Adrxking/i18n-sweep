@@ -4,5 +4,11 @@ errors:
   required: "Requerido"
 opt:
   hello: "Hola desde Options API"
+menu:
+  home: "Inicio"
+form:
+  email: "Correo"
+notifications:
+  new: "Nueva notificación"
 
 

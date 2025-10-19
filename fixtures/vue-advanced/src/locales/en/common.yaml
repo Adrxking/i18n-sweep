@@ -6,5 +6,11 @@ errors:
   not_found: "Not found"
 opt:
   hello: "Hello from Options API"
+menu:
+  home: "Home"
+form:
+  email: "Email"
+notifications:
+  new: "New notification"
 
 
