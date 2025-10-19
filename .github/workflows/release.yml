@@ -1,34 +1,23 @@
-name: release-please
+name: Release Please
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
-  release-please:
+  release:
     runs-on: ubuntu-latest
     steps:
-      - name: Release Please
-        uses: google-github-actions/release-please-action@v4
+      - name: Run release-please
+        uses: googleapis/release-please-action@v4
         with:
-          release-type: node
-          package-name: i18n-sweep
-          bump-minor-pre-major: true
-          changelog-types: |
-            [
-              {"type":"feat","section":"Features","hidden":false},
-              {"type":"fix","section":"Bug Fixes","hidden":false},
-              {"type":"perf","section":"Performance","hidden":false},
-              {"type":"refactor","section":"Refactors","hidden":false},
-              {"type":"docs","section":"Documentation","hidden":false},
-              {"type":"build","section":"Build System","hidden":true},
-              {"type":"chore","section":"Chores","hidden":true},
-              {"type":"test","section":"Tests","hidden":true}
-            ]
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN || github.token }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+          target-branch: main
 
 
